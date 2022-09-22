@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="title">Color palette generator</h1>
+            <div class="boxes">
+                <div class="box">
+                    <div class="color"></div>
+                    <input type="text" class="code" value="#EEEDF0" size="7" readonly></input>
+                </div>
+                <div class="box">
+                    <div class="color"></div>
+                    <input type="text" class="code" value="#A1B5C1" size="7" readonly></input>
+                </div>
+                <div class="box">
+                    <div class="color"></div>
+                    <input type="text" class="code" value="#F9ACA7" size="7" readonly></input>
+                </div>
+                <div class="box">
+                    <div class="color"></div>
+                    <input type="text" class="code" value="#68747D" size="7" readonly></input>
+                </div>
+                <div class="box">
+                    <div class="color"></div>
+                    <input type="text" class="code" value="#CF365F" size="7" readonly></input>
+                </div>
+            </div>
+            <button class="generate" id="generate">Generate palette</button>
+            <p class="spacebar_text">Or just press the "Spacebar" to generate new palettes</p>
+            <div class="copy_text">
+                <p class="text">Click to copy individual color</p>
+            </div>
+        </div>
+    </div>
+    <div class="color_copied">Color <span id="color_code">#F9ACA7</span> copied to your clipboard</div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
